@@ -50,8 +50,8 @@ class DrawPng
             foreach ($line as $str) {
                 // 黒文字
                 $box = $canvas->queryFontMetrics($draw, $str);
-                if (rand() % 2 == 1) {
-//                if (ScrapeStockValue::handle(trim($str))) {
+//                if (rand() % 2 == 1) {
+                if (ScrapeStockValue::handle(trim($str))) {
                     // 白文字
                     $draw->setFillColor('#ffffff');
                     $draw->setStrokeWidth(self::FONT_STROKE_SIZE);
