@@ -7,7 +7,7 @@ class ScrapeStockValue
     public function handle($code)
     {
         echo $code."\n";
-        usleep(500000);
+        usleep(2500000);
         if (! is_numeric($code)) {
             return false;
         }

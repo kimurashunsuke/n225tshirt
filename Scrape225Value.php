@@ -6,7 +6,7 @@ class Scrape225Value
 {
     public function handle()
     {
-        usleep(500000);
+        usleep(2500000);
         $html = file_get_contents("https://minkabu.jp/stock/100000018");
         $doc = phpQuery::newDocument($html);
         $val = pq('.stock_price_diff')->text() . "\n";
