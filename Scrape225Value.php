@@ -2,16 +2,12 @@
 
 require_once 'phpQuery-onefile.php';
 
-class ScrapeStockValue
+class Scrape225Value
 {
-    public function handle($code)
+    public function handle()
     {
-        echo $code."\n";
         usleep(500000);
-        if (! is_numeric($code)) {
-            return false;
-        }
-        $html = file_get_contents("https://minkabu.jp/stock/{$code}");
+        $html = file_get_contents("https://minkabu.jp/stock/100000018");
         $doc = phpQuery::newDocument($html);
         $val = pq('.stock_price_diff')->text() . "\n";
         trim(explode('(', $val)[0]);
