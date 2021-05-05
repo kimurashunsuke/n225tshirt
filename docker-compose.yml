@@ -3,10 +3,18 @@ services:
   php-fpm:
     build:
       context: .
-      dockerfile: ./Dockerfile
+      dockerfile: ./Docker/php-fpm/Dockerfile
     volumes:
       - .:/var/www/html:delegated
-#      - ./docker/php-fpm/local/php.ini:/usr/local/etc/php/php.ini:delegated
-#      - ./docker/php-fpm/local/laravel-worker.conf:/etc/supervisor/conf.d/laravel-worker.conf
     networks:
       - default
+  chrome:
+    build:
+      context: .
+      dockerfile: ./Docker/chrome/Dockerfile
+    volumes:
+      - .:/var/www/html:delegated
+    networks:
+      - default
+volumes:
+  storage:

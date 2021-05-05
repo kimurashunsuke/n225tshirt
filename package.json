@@ -1,0 +1,10 @@
+{
+  "main": "upload.js",
+  "scripts": {
+    "start": "node upload.js"
+  },
+  "dependencies": {
+    "chromedriver": "^90.0.0",
+    "puppeteer": "^9.1.0"
+  }
+}
