@@ -1,0 +1,186 @@
+{
+  "id": "b2cc01a3-f959-4ecc-8175-fccf3870581d",
+  "version": "2.0",
+  "name": "suzuri",
+  "url": "https://suzuri.jp",
+  "tests": [{
+    "id": "171d22f6-23ac-4d05-995f-81abeea9e549",
+    "name": "Untitled",
+    "commands": [{
+      "id": "0384ebce-4736-4ed2-bcdd-a7d95a0611dd",
+      "comment": "",
+      "command": "open",
+      "target": "/login?next=%2F",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4a0e15c9-c917-4c1b-9be1-647a112dade3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "990x1089",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "27e0e79e-8299-4308-a130-eadbdf1412ce",
+      "comment": "",
+      "command": "type",
+      "target": "id=session_name",
+      "targets": [
+        ["id=session_name", "id"],
+        ["name=session[name]", "name"],
+        ["css=#session_name", "css:finder"],
+        ["xpath=//input[@id='session_name']", "xpath:attributes"],
+        ["xpath=//form[@id='js-login-form']/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//section[3]/div/div/form/div/div/div/input", "xpath:position"]
+      ],
+      "value": "frank.frazetta@gmail.com"
+    }, {
+      "id": "906198d2-2041-44dd-81e2-a0d7c0ec2966",
+      "comment": "",
+      "command": "type",
+      "target": "id=session_password",
+      "targets": [
+        ["id=session_password", "id"],
+        ["name=session[password]", "name"],
+        ["css=#session_password", "css:finder"],
+        ["xpath=//input[@id='session_password']", "xpath:attributes"],
+        ["xpath=//form[@id='js-login-form']/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//section[3]/div/div/form/div/div/div[2]/input", "xpath:position"]
+      ],
+      "value": "into08452"
+    }, {
+      "id": "6b985ccc-ba88-40df-af6d-f97fd3532329",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ncgr-button--primary",
+      "targets": [
+        ["css=.ncgr-button--primary", "css:finder"],
+        ["xpath=(//input[@name='commit'])[2]", "xpath:attributes"],
+        ["xpath=//form[@id='js-login-form']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//form/div/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dbfd4061-1885-4554-84ef-fec6a06d9d8f",
+      "comment": "",
+      "command": "pause",
+      "target": "3000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "54e8f476-858a-4149-af91-f02ddfeb29e2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ncgr-avatar__name",
+      "targets": [
+        ["css=.ncgr-avatar__name", "css:finder"],
+        ["xpath=//div[@id='opennav']/div/span", "xpath:idRelative"],
+        ["xpath=//div/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'kabutee')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d6281d18-e8ba-45f7-b14a-88a30b0fa2e6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.account-navigation__item:nth-child(2) .account-navigation__label",
+      "targets": [
+        ["css=.account-navigation__item:nth-child(2) .account-navigation__label", "css:finder"],
+        ["xpath=//div[@id='overlay-nav-content']/ul/li[2]/a/span", "xpath:idRelative"],
+        ["xpath=//a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'アイテムをつくる')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3c2756b0-394d-4b38-a312-1934eddc5e88",
+      "comment": "",
+      "command": "pause",
+      "target": "3000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "161dcead-9b57-4f56-b3a2-73e01a6af543",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,523)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9b528af7-a49f-479d-85fc-1ba9408b9e85",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,2771)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b30e528b-3a2b-49b7-b041-395ed1d70c68",
+      "comment": "",
+      "command": "type",
+      "target": "//input[@type='file']",
+      "targets": [
+        ["css=.ncgr-button:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='material-dropzone']/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"]
+      ],
+      "value": "C:\\Users\\kimur\\Dropbox\\アプリ\\225tshirts\\225tshirts\\export.png"
+    }, {
+      "id": "92d60f4b-f86f-41b3-a363-724f00677f56",
+      "comment": "",
+      "command": "pause",
+      "target": "5000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ffe61daf-b3fb-4371-8e63-974b276175c2",
+      "comment": "",
+      "command": "type",
+      "target": "id=material-title",
+      "targets": [
+        ["id=material-title", "id"],
+        ["name=material[title]", "name"],
+        ["css=#material-title", "css:finder"],
+        ["xpath=//input[@id='material-title']", "xpath:attributes"],
+        ["xpath=//div[@id='material-edit-form']/div/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "NIKKEI225 証券コード一覧 （${date}）"
+    }, {
+      "id": "9964e1b5-4fe2-4ef4-8f2a-ee053590ce04",
+      "comment": "",
+      "command": "type",
+      "target": "id=material-description",
+      "targets": [
+        ["id=material-description", "id"],
+        ["name=material[description]", "name"],
+        ["css=#material-description", "css:finder"],
+        ["xpath=//textarea[@id='material-description']", "xpath:attributes"],
+        ["xpath=//div[@id='material-edit-form']/div/div/div[2]/div[2]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "日経平均株価指数に採用されている証券コード一覧です。当日プラス銘柄（白抜き文字）とマイナス銘柄（黒抜き文字）で色分けした証券コードでデザインしています。"
+    }, {
+      "id": "8ac8a2fc-ec7c-4636-80a8-47591de49284",
+      "comment": "",
+      "command": "type",
+      "target": "id=material-price",
+      "targets": [
+        ["id=material-price", "id"],
+        ["css=#material-price", "css:finder"],
+        ["xpath=//input[@id='material-price']", "xpath:attributes"],
+        ["xpath=//div[@id='material-edit-form']/div/div/div[2]/div[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/input", "xpath:position"]
+      ],
+      "value": "1000"
+    }]
+  }],
+  "suites": [{
+    "id": "eb7eeecd-40ce-4d88-aa83-381eb4b48ecc",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["171d22f6-23ac-4d05-995f-81abeea9e549"]
+  }],
+  "urls": ["https://suzuri.jp/"],
+  "plugins": []
+}
