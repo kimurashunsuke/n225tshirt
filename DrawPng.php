@@ -5,7 +5,7 @@ require_once 'Scrape225Value.php';
 
 class DrawPng
 {
-    const TTF_FONT_FILE = __DIR__ . '/Anton-Regular.ttf';
+    const TTF_FONT_FILE = BASE_DIR . '/Anton-Regular.ttf';
     const CANVAS_WIDTH = 2520;
     const CANVAS_HEIGHT = 2992;
     const PADDING = 10;
@@ -30,7 +30,7 @@ class DrawPng
 
         $i = 0;
         $j = 0;
-        $nikkei225 = include '225.php';
+        $nikkei225 = include BASE_DIR . '/225.php';
         foreach ($nikkei225 as $key => $code) {
             $lines[$i][$j] = $code;
             if ($j == 9 || $key === array_key_last($nikkei225)) {
@@ -88,6 +88,6 @@ class DrawPng
         //画像として出力
         $canvas->drawImage($draw);
         $canvas->setImageFormat("png");
-        $canvas->writeImage('export.png');
+        $canvas->writeImage(BASE_DIR . '/export.png');
     }
 }

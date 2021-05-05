@@ -6,15 +6,19 @@ services:
       dockerfile: ./Docker/php-fpm/Dockerfile
     volumes:
       - .:/var/www/html:delegated
+    environment:
+      TZ: Asia/Tokyo
     networks:
       - default
-  chrome:
-    build:
-      context: .
-      dockerfile: ./Docker/chrome/Dockerfile
-    volumes:
-      - .:/var/www/html:delegated
-    networks:
-      - default
-volumes:
-  storage:
+#  chrome:
+#    build:
+#      context: .
+#      dockerfile: ./Docker/chrome/Dockerfile
+#    volumes:
+#      - .:/var/www/html:delegated
+#    environment:
+#      TZ: Asia/Tokyo
+#    networks:
+#      - default
+#volumes:
+#  storage:
